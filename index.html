@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Luigi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F6FFF2; /* light Luigi green */
+      color: #232D4B; /* navy */
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #4BAF50; /* Luigi green */
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #2980D9; /* Luigi blue */
+      color: white;
+    }
+    .paid {
+      background-color: #4BAF50;
+      color: white;
+    }
+    .overdue {
+      background-color: #F56A6A;
+      color: white;
+    }
+    .upcoming {
+      background-color: #2980D9;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project Luigi - Year at a Glance</h1>
+  </header>
+
+  <section id="glance">
+    <table>
+      <tr>
+        <th></th>
+        <th>Jan</th>
+        <th>Feb</th>
+        <th>Mar</th>
+      </tr>
+      <tr>
+        <td>Rent 🏠</td>
+        <td class="paid">$700</td>
+        <td class="paid">$700</td>
+        <td class="upcoming">$700</td>
+      </tr>
+      <tr>
+        <td>Electric ⚡</td>
+        <td class="paid">$45</td>
+        <td class="overdue">$50</td>
+        <td class="upcoming">$42</td>
+      </tr>
+    </table>
+  </section>
+
+  <script>
+    console.log('Project Luigi loaded', window.api.version());
+  </script>
+</body>
+</html>
